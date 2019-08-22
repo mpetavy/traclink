@@ -157,6 +157,6 @@ func run() error {
 func main() {
 	defer common.Cleanup()
 
-	common.New(&common.App{"traclink", "1.0.5", "2018", "generates markdown links to TRAC changesets", "mpetavy", common.APACHE, "https://github.com/mpetavy/traclink", false, nil,nil, nil, run, time.Duration(0)}, []string{"s"})
+	common.New(&common.App{"traclink", "1.0.5", "2018", "generates markdown links to TRAC changesets", "mpetavy", common.APACHE, "https://github.com/mpetavy/traclink", false, nil, nil, run, time.Duration(0)}, []string{"s"})
 	common.Run()
 }
