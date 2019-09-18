@@ -32,7 +32,7 @@ const (
 )
 
 func init() {
-	common.Init("traclink", "1.0.5", "2018", "generates markdown links to TRAC changesets", "mpetavy", common.APACHE, "https://github.com/mpetavy/traclink", false, nil, nil, run, 0)
+	common.Init("1.0.5", "2018", "generates markdown links to TRAC changesets", "mpetavy", common.APACHE, false, nil, nil, run, 0)
 
 	url = flag.String("u", default_url, "URL to the SVN repository or relative path")
 	trac = flag.String("t", "http://trac-medmuc/trac/lehel/changeset/", "TRAC prefix")
