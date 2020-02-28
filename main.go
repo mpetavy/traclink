@@ -69,9 +69,9 @@ func run() error {
 
 	cmd := exec.Command(path, p...)
 
-	fmt.Printf("Scan SVN log: %s ... ", common.ToString(*cmd))
+	fmt.Printf("Scan SVN log: %s ... ", common.CmdToString(cmd))
 
-	common.Debug("exec: %s", common.ToString(*cmd))
+	common.Debug("exec: %s", common.CmdToString(cmd))
 
 	b, err := cmd.Output()
 	output, err := common.ToUTF8String(string(b[:]), common.DefaultEncoding())
